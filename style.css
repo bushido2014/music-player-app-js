@@ -1,0 +1,72 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.wrapper {
+  @apply h-screen  flex justify-center items-center content-center w-full;
+
+}
+
+.player {
+  @apply 
+  max-w-sm
+  w-full
+  shadow-md 
+  bg-gray-50 
+  rounded-lg p-5 
+  text-center;
+}
+.player h3 {
+  @apply text-3xl px-6;
+}
+
+.button svg{
+  @apply cursor-pointer;
+}
+.title {
+  @apply text-3xl;
+}
+.buttons {
+  @apply flex justify-between items-center p-3 w-full;
+}
+
+.play {
+  @apply mx-1.5;
+}
+.icon-play {
+  @apply h-12 w-12 
+  cursor-pointer;
+}
+
+.song {
+  @apply text-center text-base py-2 my-3;
+}
+.cover {
+  @apply flex justify-center my-3;
+}
+.cover-img {
+  @apply w-32 h-32 rounded-full;
+}
+.cover-img.active {
+  animation: rotateAnimation 3s linear infinite;
+}
+@keyframes rotateAnimation {
+  0% {
+     transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.progress_container {
+  @apply w-full h-3 rounded-sm bg-gray-100 my-4 flex items-center cursor-pointer;
+}
+
+.progress {
+  @apply h-2 bg-purple-900 rounded-sm;
+}
